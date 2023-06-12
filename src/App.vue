@@ -79,6 +79,11 @@ export default {
     font-weight: bold;
     color: #2c3e50;
 
+    /* & 代表嵌套规则外层的父元素选择器 */
+    &:hover{
+      outline-style: dashed;
+    }
+
    /* &.router-link-exact-active {
       color: #42b983;
     }*/
