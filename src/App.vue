@@ -8,6 +8,7 @@
     <input-demo /> -->
     <!--<checkboxGroup />-->
     <data-time />
+    <cus-tab></cus-tab>
     <el-button @click="opendDialog">法制资料</el-button>
     <el-dialog title="法制资料" :visible.sync="dialog" width="80%">
       <div>
@@ -36,6 +37,7 @@ import nestedDialog from '@/components/nestedDialog'
 import checkboxGroup from '@/components/checkboxGroup'
 import fullScreen from '@/components/fullScreen'
 import dataTime from '@/components/dataTime'
+import cusTab from '@/components/CustomTab'
 export default {
   name: 'app',
   components: {
@@ -48,7 +50,8 @@ export default {
     ss */
     /* checkboxGroup, */
     nestedDialog,
-    dataTime
+    dataTime,
+    cusTab
     /* fullScreen */
   },
   data () {
