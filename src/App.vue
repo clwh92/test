@@ -7,14 +7,15 @@
     <file />
     <input-demo /> -->
     <!--<checkboxGroup />-->
-    <data-time />
+    <!--<data-time />
     <cus-tab></cus-tab>
     <el-button @click="opendDialog">法制资料</el-button>
     <el-dialog title="法制资料" :visible.sync="dialog" width="80%">
       <div>
         <nestedDialog />
       </div>
-    </el-dialog>
+    </el-dialog>-->
+    <video-image />
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
@@ -38,6 +39,7 @@ import checkboxGroup from '@/components/checkboxGroup'
 import fullScreen from '@/components/fullScreen'
 import dataTime from '@/components/dataTime'
 import cusTab from '@/components/CustomTab'
+import videoImage from '@/components/videoImage'
 export default {
   name: 'app',
   components: {
@@ -49,9 +51,10 @@ export default {
     InputMuti,
     ss */
     /* checkboxGroup, */
-    nestedDialog,
+    /* nestedDialog,
     dataTime,
-    cusTab
+    cusTab, */
+    videoImage
     /* fullScreen */
   },
   data () {
