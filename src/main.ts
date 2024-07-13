@@ -1,7 +1,8 @@
 import Vue from 'vue'
-import App from './App.vue'
+// import App from './App.vue'
+import AppNew from './AppNew.vue' // 即将使用Jest
 import './registerServiceWorker'
-import router from './router'
+import router from './router/indexNew'
 import store from './store'
 import elementui from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -14,5 +15,5 @@ Vue.directive('limitNum', limitNum)
 new Vue({
   router,
   store,
-  render: h => h(App)
-}).$mount('#app')
+  render: h => h(AppNew)
+}).$mount('#appNew')
